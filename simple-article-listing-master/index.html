@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple Article Listing | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      :root{
+        --heading: #000000;
+        --text: #4D5562;
+        --decoration: #D9D9D9;
+      }
+      .author-info a {
+        text-decoration: none;
+      }
+
+      .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .title > h1{
+        font-size: 2.25rem;
+      }
+
+      .article-content{
+        display: flex;
+        flex-direction: row;
+        wrap: nowrap;
+        justify-content: center;
+        padding: 3%;
+      }
+
+      .article-content-text{
+        padding: 4% 0 0 10%;
+      }
+      .article-content-text > h1{
+        font-size: 3vw;
+      }
+
+      .article-content-text > p{
+        padding-top: 4%;
+        font-size: 2.5vw;
+        color:  var(--text);
+      }
+
+      .article-content > picture > img{
+        border-radius: 10%;
+      }
+
+      .title > span{
+        padding-top: 5%;
+        color:  var(--decoration);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+
+      We release interesting articles about technology
+    
+      Unlocking the Power of Cloud Computing
+    
+      A Guide to Scalable Solutions
+    
+      November 12, 2024
+    
+      The Future of AI
+    y
+      How Machine Learning is Revolutionizing Industries
+    
+      The Impact of 5G on Business
+    
+      How Faster Networks are Transforming the Way We Work
+    
+    -->
+
+    <div class="author-info">
+      Coded by <a href="#">Joel Lara Gómez</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+    <main class="content">
+        <section class="title">
+            <h1 class="title-text">We release interesting articles about technology</h1>
+            <span>/ / / / / / / / / / / / / / / / / / /</span>
+          </section>
+        <section class="article">
+            <div class="article-content">
+              <picture class="img-size">
+                <source media="(min-width:650px)" srcset="resources/photo_1@2x.png">
+                <source media="(min-width:465px)" srcset="resources/photo_1.png">
+                <img src="resources/photo_1.png">
+              </picture>
+
+              <div class="article-content-text">
+                <h1>Unlocking the Power of Cloud Computing: A guide to Scalable Solutions</h1>
+                <p>November 12, 2024</p>
+              </div>
+
+            </div>
+            <div class="article-content">
+              <picture class="img-size">
+                <source media="(min-width:650px)" srcset="resources/photo_3@2x.png">
+                <source media="(min-width:465px)" srcset="resources/photo_3.png">
+                <img src="resources/photo_3.png">
+              </picture>
+
+              <div class="article-content-text">
+                <h1>Unlocking the Power of Cloud Computing: A guide to Scalable Solutions</h1>
+                <p>November 12, 2024</p>
+              </div>
+
+            </div>
+            <div class="article-content">
+              <picture class="img-size">
+                <source media="(min-width:650px)" srcset="resources/photo_2@2x.png">
+                <source media="(min-width:465px)" srcset="resources/photo_2.png">
+                <img src="resources/photo_2.png">
+              </picture>
+
+              <div class="article-content-text">
+                <h1>Unlocking the Power of Cloud Computing: A guide to Scalable Solutions</h1>
+                <p>November 12, 2024</p>
+              </div>
+
+            </div>
+        </section>
+    </main>
+  </body>
+</html>
